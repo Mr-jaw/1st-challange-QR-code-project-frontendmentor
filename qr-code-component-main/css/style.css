@@ -1,0 +1,67 @@
+/* setting custom css properties */
+:root {
+    --white: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --font-size: 15px;
+    --font-family: 'Outfit', sans-serif;;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--Light-gray);
+    vertical-align: middle;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--font-family);
+}
+
+.qr-card {
+    width: 300px;
+    margin: auto auto;
+    padding: 15px;
+    background-color: var(--white);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.qr-card .qr-img {
+    width: 270px;
+    border-radius: 10px;
+}
+
+.qr-card .txt-box {
+    padding: 0 10px;
+    padding-bottom: 15px;
+}
+
+.qr-card .title {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--Dark-blue);
+}
+
+.qr-card .description  {
+    font-size: var(--font-size);
+    color: var(--Grayish-blue);
+}
+
+/* default attribution css */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
